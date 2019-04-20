@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Ashley Marques</Authors>
+    <Description>Extension Method to SnakeCase all EFCore database structures(tables,relations,schemas,etc) so your entity 'PersonLog' will become a table 'person_log' and so on. This will help your fellow DBA smile.</Description>
+    <PackageLicenseUrl>MIT</PackageLicenseUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.0" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PackageId>Marques.EFCore.SnakeCase</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>Extension Method to SnakeCase all EFCore database structures(tables,relations,schemas,etc) so your entity 'PersonLog' will become a table 'person_log' and so on.</PackageTags>
+    <PackageLicenseUrl>MIT</PackageLicenseUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+  </PropertyGroup>
+
+
+</Project>
