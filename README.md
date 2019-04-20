@@ -1,5 +1,6 @@
 
 ## Marques.EFCore.SnakeCase Extensions
+[![Build status](https://ci.appveyor.com/api/projects/status/xo974xcrq8cmdl0p?svg=true)](https://ci.appveyor.com/project/leonibr/efcore-snakecase)
 
 This is an Entity Framework Core extension method to SnakeCase all structures of your `DbContext`.
 * It is database agnostic (EFCore)
