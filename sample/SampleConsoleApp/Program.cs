@@ -9,47 +9,25 @@ namespace SampleConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Sample app does nothing really...");
-            DoCommand("dotnet", "ef migrations remove");
-            Thread.Sleep(200);
-            DoCommand("dotnet", "build");
-            Thread.Sleep(200);
+            Console.WriteLine("Sample app does nothing...\n 1. Remove previuos migrations");
+            Console.WriteLine("> dotnet ef migrations remove");
+            
+            Console.WriteLine("> dotnet build");
+            
 
-            Console.WriteLine("Creating Migration 'Initial'");
+            Console.WriteLine("\n2. Creating Migration 'Initial'");
 
-            DoCommand("dotnet", "ef migrations add \"Initial\"");
+            Console.WriteLine("> dotnet ef migrations add \"Initial\"");
             Thread.Sleep(200);
-            Console.WriteLine("Generating Database script for SQLite");
-            DoCommand("dotnet", "ef migrations script --output sample.sql");
+            Console.WriteLine("\n3. Generating Database script for SQLite");
+            Console.WriteLine("> dotnet ef migrations script --output sample.sql");
             Thread.Sleep(200);
-            DoCommand("type", "sample.sql");
-            Console.WriteLine("sample has finished..");
+            Console.WriteLine("check the generated file sample.sql");
+           
             //Console.ReadLine();
         }
 
 
-        static void DoCommand(string command, string args)
-        {
-            var process = new Process();
-            var startInfo = new ProcessStartInfo(command, args);
-            //startInfo = startInfo;
-            startInfo.FileName = command;
-            startInfo.Arguments = args;
-            startInfo.UseShellExecute = false;
-            startInfo.CreateNoWindow = false;
-            process.StartInfo.RedirectStandardOutput = true;
-            process.OutputDataReceived += (sender, data) =>
-            {
-                Console.WriteLine(data.Data);
-            };
-            process.StartInfo.RedirectStandardError = true;
-            process.ErrorDataReceived += (sender, data) =>
-            {
-                Console.WriteLine(data.Data);
-            };
-            process.StartInfo = startInfo;
-            process.Start();
-            process.WaitForExit();
-        }
+
     }
 }

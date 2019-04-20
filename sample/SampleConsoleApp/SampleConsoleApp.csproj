@@ -6,13 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Marques.EFCore.SnakeCase" Version="1.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\Marques.EFCore.SnakeCase\Marques.EFCore.SnakeCase.csproj" />
   </ItemGroup>
 
 </Project>

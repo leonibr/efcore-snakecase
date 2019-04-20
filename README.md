@@ -90,5 +90,5 @@ CREATE INDEX "ix_belongings_person_id" ON "belongings" ("person_id");
 
 MIT
 
-### Pull request are welcome
+### Pull requests are welcome
 

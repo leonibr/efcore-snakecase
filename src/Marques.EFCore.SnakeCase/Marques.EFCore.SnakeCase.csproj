@@ -14,8 +14,8 @@
     <PackageVersion>1.0.0</PackageVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>Extension Method to SnakeCase all EFCore database structures(tables,relations,schemas,etc) so your entity 'PersonLog' will become a table 'person_log' and so on.</PackageTags>
-    <PackageLicenseUrl>MIT</PackageLicenseUrl>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/leonibr/efcore-snakecase/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/leonibr/efcore-snakecase></PackageProjectUrl>
   </PropertyGroup>
 
 
