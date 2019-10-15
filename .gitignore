@@ -9,6 +9,8 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 
+
+database.db
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history

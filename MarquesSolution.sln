@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29319.158
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FABF8F0-B74E-41F3-8906-81AB348AA1D9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marques.EFCore.SnakeCase", "src\Marques.EFCore.SnakeCase\Marques.EFCore.SnakeCase.csproj", "{0CEEA081-1946-45E8-BE25-09E806D98340}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marques.EFCorev3.0.SnakeCase", "src\Marques.EFCore.SnakeCase\Marques.EFCorev3.0.SnakeCase.csproj", "{0CEEA081-1946-45E8-BE25-09E806D98340}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeCaseTests", "tests\SnakeCaseTests\SnakeCaseTests.csproj", "{499CF1D5-7A27-48B3-9812-53D93D36AA0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeCaseTests", "tests\SnakeCaseTests\SnakeCaseTests.csproj", "{499CF1D5-7A27-48B3-9812-53D93D36AA0E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8B11F4BD-2BE6-45FE-A54C-16A06A996A17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{1755D7A0-8713-4218-8EC7-71BD19F95709}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleConsoleApp", "sample\SampleConsoleApp\SampleConsoleApp.csproj", "{AA2BE57E-F3E4-4149-90F7-AC6D1F9F5903}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleConsoleApp", "sample\SampleConsoleApp\SampleConsoleApp.csproj", "{AA2BE57E-F3E4-4149-90F7-AC6D1F9F5903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,5 @@
-﻿using Marques.EFCore.SnakeCase;
+﻿
+using Marques.EFCore.SnakeCase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
