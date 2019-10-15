@@ -4,17 +4,23 @@
 
 This is an Entity Framework Core extension method to SnakeCase all structures of your `DbContext`.
 * It is database agnostic (EFCore)
-* NetStandard 2.0
+* NetStandard 2.0 (for core 2.x)
+* NetStandard 2.1 (for core 3.0)
 
 Enougth talking:
 ### Getting Started
 1. Install Package
 ```
-// From CLI 
-> dotnet add package Marques.EFCore.SnakeCase
+// For .net core 2.x CLI 
+> dotnet add package Marques.EFCore.SnakeCase 
+// For .net core 3.0
+> dotnet add package Marques.EFCorev3.0.SnakeCase
+
 
 // Or from Visual Studio Packge Manager
  Install-Package Marques.EFCore.SnakeCase
+ // Or from Visual Studio Packge Manager
+ Install-Package Marques.EFCorev3.0.SnakeCase
 ```
 2. Then on your DbContext   
 ```c#
