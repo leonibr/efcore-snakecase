@@ -12,8 +12,7 @@ namespace SampleConsoleApp
             Console.WriteLine("Sample app does nothing...\n 1. Remove previuos migrations");
             Console.WriteLine("> dotnet ef migrations remove");
             
-            Console.WriteLine("> dotnet build");
-            
+            Console.WriteLine("> dotnet build");            
 
             Console.WriteLine("\n2. Creating Migration 'Initial'");
 
