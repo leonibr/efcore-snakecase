@@ -39,7 +39,8 @@ namespace Marques.EFCore.SnakeCase
             foreach (var entity in modelBuilder.Model.GetEntityTypes())
             {
                 if (convertAll || convertTables)
-                    entity.SetTableName(entity.GetTableName().ToSnakeCase());
+                    if (entity.BaseType == null)
+                        entity.SetTableName(entity.GetTableName().ToSnakeCase());
 
                 if (convertAll || convertProperties)
                     foreach (var property in entity.GetProperties())
