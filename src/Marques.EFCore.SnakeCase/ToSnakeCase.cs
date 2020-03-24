@@ -11,7 +11,7 @@ namespace Marques.EFCore.SnakeCase
             if (string.IsNullOrEmpty(input)) { return input; }
 
             var noLeadingUndescore = Regex.Replace(input, @"^_", "");
-            return Regex.Replace(noLeadingUndescore, @"([a-z0-9])([A-Z])", "$1_$2").ToLower();
+            return Regex.Replace(noLeadingUndescore, @"(?:(?<l>[a-z0-9])(?<r>[A-Z])|(?<l>[A-Z])(?<r>[A-Z][a-z0-9]))", "${l}_${r}").ToLower();
         }
 
         public static void ToSnakeCase(this ModelBuilder modelBuilder)
