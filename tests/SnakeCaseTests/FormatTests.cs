@@ -15,6 +15,8 @@ namespace SnakeCaseTests
         [InlineData("PersonLOGFile", "person_log_file")]
         [InlineData("PersonCodeId", "person_code_id")]
         [InlineData("PersonAddress_", "person_address_")]
+        [InlineData("KullanıcıAdı", "KullaniciAdi")]
+
         public void TestFramatNames(string given, string expcted)
         {
             given.ToSnakeCase().ShouldBe(expcted);
