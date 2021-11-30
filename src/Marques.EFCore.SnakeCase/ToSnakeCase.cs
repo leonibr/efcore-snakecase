@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using System;
 using System.Text.RegularExpressions;
 
@@ -45,7 +46,10 @@ namespace Marques.EFCore.SnakeCase
                 if (convertAll || convertProperties)
                     foreach (var property in entity.GetProperties())
                     {
-                        property.SetColumnName(property.GetColumnName().ToSnakeCase());
+                        property.SetColumnName(
+                                property
+                                    .GetColumnName(StoreObjectIdentifier.Table(entity.GetTableName(), entity.GetSchema()))
+                                    .ToSnakeCase());
                     }
 
                 if (convertAll || convertKeys)
@@ -63,7 +67,7 @@ namespace Marques.EFCore.SnakeCase
                 if (convertAll || convertIndexes)
                     foreach (var index in entity.GetIndexes())
                     {
-                        index.SetName(index.GetName().ToSnakeCase());
+                        index.SetDatabaseName(index.GetDatabaseName().ToSnakeCase());
                     }
             }
         }
