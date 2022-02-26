@@ -1,3 +1,4 @@
 
 # Avoid sample migration scripts into repo
 [Mm]igrations/
+*.sql
