@@ -18,14 +18,14 @@ namespace Marques.EFCore.SnakeCase
             Indexes = 2 << 5,
         };
         private static Regex leadingUndescoreRegex = new Regex(@"^_", RegexOptions.Compiled);
-        private static Regex camelCaseRegex = new Regex(@"([a-z0-9])([A-Z])", RegexOptions.Compiled);
+        private static Regex camelCaseRegex = new Regex(@"(?:(?<l>[a-z0-9])(?<r>[A-Z])|(?<l>[A-Z])(?<r>[A-Z][a-z0-9]))", RegexOptions.Compiled);
         
         public static string ToSnakeCase(this string input)
         {
             if (string.IsNullOrEmpty(input)) { return input; }
 
             var noLeadingUndescore = leadingUndescoreRegex.Replace(input, "");
-            return camelCaseRegex.Replace(noLeadingUndescore, "$1_$2").ToLower();
+            return camelCaseRegex.Replace(noLeadingUndescore, "${l}_${r}").ToLower();
         }
 
         public static void ToSnakeCase(this ModelBuilder modelBuilder, ConvertOptions options = ConvertOptions.All)
