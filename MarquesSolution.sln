@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29319.158
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FABF8F0-B74E-41F3-8906-81AB348AA1D9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marques.EFCorev3.0.SnakeCase", "src\Marques.EFCore.SnakeCase\Marques.EFCorev6.0.SnakeCase.csproj", "{0CEEA081-1946-45E8-BE25-09E806D98340}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marques.EFCorev8.0.SnakeCase", "src\Marques.EFCore.SnakeCase\Marques.EFCorev8.0.SnakeCase.csproj", "{0CEEA081-1946-45E8-BE25-09E806D98340}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeCaseTests", "tests\SnakeCaseTests\SnakeCaseTests.csproj", "{499CF1D5-7A27-48B3-9812-53D93D36AA0E}"
 EndProject
